@@ -10,7 +10,7 @@ async function main () {
 
     const Table = new CreateTable(processData);
 
-    console.log(Table.rows);
+    console.log(Table.ColumnCount);
 }
 
 main();
