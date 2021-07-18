@@ -1,8 +1,8 @@
 const ejs = require('ejs');
 
 class HTMLparser {
-    static Parser(){
-        ejs.renderFile("./tableStructure/table");
+   static async Parser(table){
+       return await ejs.renderFile("./tableStructure/table.ejs", { header: table.header });
     }
 }
 
