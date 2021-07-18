@@ -13,6 +13,15 @@
                 <th> <%= column %> </th>
             <% }) %>
         </thead>
+        <tbody>
+            <% lines.forEach(line => { %>
+                <tr>
+                    <% line.forEach(element => { %>
+                        <td> <%= element %> </td>
+                    <% }) %>
+                </tr>
+            <% }) %>
+        </tbody>
     </table>
     
 </body>
