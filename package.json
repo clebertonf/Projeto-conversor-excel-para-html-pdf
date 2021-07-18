@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/clebertonf/Projeto-conversor-exel-para-html-pdf/issues"
   },
-  "homepage": "https://github.com/clebertonf/Projeto-conversor-exel-para-html-pdf#readme"
+  "homepage": "https://github.com/clebertonf/Projeto-conversor-exel-para-html-pdf#readme",
+  "dependencies": {
+    "ejs": "^3.1.6"
+  }
 }
