@@ -1,0 +1,19 @@
+{
+  "name": "projeto-conversor-exel-para-html-pdf",
+  "version": "1.0.0",
+  "description": "Um conversor de exel para HTML e PDF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clebertonf/Projeto-conversor-exel-para-html-pdf.git"
+  },
+  "author": "Cleberton <clebertonfgc@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clebertonf/Projeto-conversor-exel-para-html-pdf/issues"
+  },
+  "homepage": "https://github.com/clebertonf/Projeto-conversor-exel-para-html-pdf#readme"
+}
