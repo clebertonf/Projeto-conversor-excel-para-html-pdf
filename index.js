@@ -2,6 +2,7 @@ const Reader = require('./classes/Reader');
 const processFile = require('./classes/ProcessFile');
 const CreateTable = require('./classes/Table');
 const HTMLparser = require('./classes/HTMLpaser');
+const writeFile = require('./classes/writeFile');
 
 const L1 = new Reader();
 
@@ -13,7 +14,7 @@ async function main () {
 
     const html = await HTMLparser.Parser(Table);
 
-    console.log(html)
+    writeFile.Write(`${Date.now()}.html`, html)
 }
 
 main();

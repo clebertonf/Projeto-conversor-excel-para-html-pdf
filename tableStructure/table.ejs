@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <table>
-        <thead>
-            <% header.forEach(column => { %>
-                <th> <%= column %> </th>
-            <% }) %>
-        </thead>
-        <tbody>
-            <% lines.forEach(line => { %>
-                <tr>
-                    <% line.forEach(element => { %>
-                        <td> <%= element %> </td>
-                    <% }) %>
-                </tr>
-            <% }) %>
-        </tbody>
-    </table>
-    
+    <div class="container">
+        <table class="table">
+            <thead>
+                <% header.forEach(column => { %>
+                    <th> <%= column %> </th>
+                <% }) %>
+            </thead>
+            <tbody>
+                <% lines.forEach(line => { %>
+                    <tr>
+                        <% line.forEach(element => { %>
+                            <td> <%= element %> </td>
+                        <% }) %>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
