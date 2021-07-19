@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static('./public'));
 
 app.get('/', (req, resp) => {
-    resp.send('Ok')
+    resp.render('index')
 });
 
 app.listen(3000, () => console.log('Online'));

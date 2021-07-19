@@ -6,10 +6,11 @@ const writeFile = require('./classes/writeFile');
 const PdfWriter = require('./classes/PdfWrite');
 
 
+
 const L1 = new Reader();
 
 async function main () {
-    const data = await L1.read('./pessoas.csv');
+    const data = await L1.read('./uploads/pessoas.csv');
     const  processData = processFile.Process(data);
 
     const Table = new CreateTable(processData);
