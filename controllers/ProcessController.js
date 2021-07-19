@@ -20,7 +20,7 @@ const ProcessConvert = (req, resp) => {
         fs.unlink('./file_upload.html', (err) => err ? console.log(err) : true);
         fs.unlink('./file_upload.pdf', (err) => err ? console.log(err) : true);
         fs.unlink('./uploads/file_upload.csv', (err) => err ? console.log(err) : true);
-    }, 8000);
+    }, 180000);
 }
 
 
