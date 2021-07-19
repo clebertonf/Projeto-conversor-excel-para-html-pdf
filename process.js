@@ -7,9 +7,10 @@ const PdfWriter = require('./classes/PdfWrite');
 
 
 
-const L1 = new Reader();
 
 async function main () {
+    
+    const L1 = new Reader();
     const data = await L1.read('./uploads/pessoas.csv');
     const  processData = processFile.Process(data);
 
@@ -22,4 +23,4 @@ async function main () {
     PdfWriter.Writer(`${Date.now()}.pdf`, html);
 }
 
-main();
+module.exports = main;
