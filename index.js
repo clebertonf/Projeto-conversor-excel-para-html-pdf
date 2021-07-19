@@ -1,7 +1,7 @@
 const express = require('express');
-const main = require('./process');
+const ConvertController = require('./controllers/ConvertController');
 const multer = require('multer');
-const fs = require('fs');
+const fs = require('fs')
 
 const app = express();
 
@@ -9,7 +9,6 @@ app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('./public'));
 
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
@@ -28,7 +27,7 @@ app.get('/', (req, resp) => {
 
 app.post('/upload', upload.single("file"), (req, resp) => {
     const { radio } = req.body;
-    main();
+    ConvertController.main();
 
     setTimeout(() => {
         if(radio === 'html') {
@@ -40,9 +39,12 @@ app.post('/upload', upload.single("file"), (req, resp) => {
       }
     },1000)
 
-    
-    
+    setTimeout(() => {
+        fs.unlink('./file_upload.html', (err) => err ? console.log(err) : true);
+        fs.unlink('./file_upload.pdf', (err) => err ? console.log(err) : true);
 
+        console.log('Deletou');
+    }, 300000);
    
 });
 

@@ -1,9 +1,9 @@
-const Reader = require('./classes/Reader');
-const processFile = require('./classes/ProcessFile');
-const CreateTable = require('./classes/Table');
-const HTMLparser = require('./classes/HTMLpaser');
-const writeFile = require('./classes/writeFile');
-const PdfWriter = require('./classes/PdfWrite');
+const Reader = require('../classes/Reader');
+const processFile = require('../classes/ProcessFile');
+const CreateTable = require('../classes/Table');
+const HTMLparser = require('../classes/HTMLpaser');
+const writeFile = require('../classes/writeFile');
+const PdfWriter = require('../classes/PdfWrite');
 
 
 
@@ -23,4 +23,4 @@ async function main () {
     PdfWriter.Writer(`file_upload.pdf`, html);
 }
 
-module.exports = main;
+module.exports = {main};
