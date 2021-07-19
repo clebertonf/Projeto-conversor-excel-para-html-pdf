@@ -9,11 +9,14 @@
 </head>
 <body>
     <div class="container">
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data" action="/upload">
             <div class="form-group">
                 <br><br>
                 <label>Escolha um arquivo CSV para converter em HTML e PDF</label><br><br>
-                <input type="file" class="form-control-file" name="file" required="true">
+                <input type="file" class="form-control-file" name="file" required="true"> <br> <br>
+                <input type="radio" name="radio" value="html"> HTML <br>
+                <input type="radio" name="radio" value="pdf" > PDF  <br> <br>
+
                 <button type="submit" class="btn btn-light">Converter</button>
           </form>
     </div>

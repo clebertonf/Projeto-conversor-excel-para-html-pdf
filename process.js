@@ -9,18 +9,18 @@ const PdfWriter = require('./classes/PdfWrite');
 
 
 async function main () {
-    
+
     const L1 = new Reader();
-    const data = await L1.read('./uploads/pessoas.csv');
+    const data = await L1.read('./uploads/file_upload.csv');
     const  processData = processFile.Process(data);
 
     const Table = new CreateTable(processData);
 
     const html = await HTMLparser.Parser(Table);
 
-    await writeFile.Write(`${Date.now()}.html`, html);
-
-    PdfWriter.Writer(`${Date.now()}.pdf`, html);
+    await writeFile.Write(`file_upload.html`, html);
+    
+    PdfWriter.Writer(`file_upload.pdf`, html);
 }
 
 module.exports = main;
