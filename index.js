@@ -3,6 +3,8 @@ const processFile = require('./classes/ProcessFile');
 const CreateTable = require('./classes/Table');
 const HTMLparser = require('./classes/HTMLpaser');
 const writeFile = require('./classes/writeFile');
+const PdfWriter = require('./classes/PdfWrite');
+
 
 const L1 = new Reader();
 
@@ -14,7 +16,9 @@ async function main () {
 
     const html = await HTMLparser.Parser(Table);
 
-    await writeFile.Write(`${Date.now()}.html`, html)
+    await writeFile.Write(`${Date.now()}.html`, html);
+
+    PdfWriter.Writer(`${Date.now()}.pdf`, html);
 }
 
 main();
