@@ -9,16 +9,27 @@
 </head>
 <body>
     <div class="container">
+        <hr>
         <form method="POST" enctype="multipart/form-data" action="/upload">
             <div class="form-group">
                 <br><br>
-                <label>Escolha um arquivo CSV para converter em HTML e PDF</label><br><br>
+                <h5>Escolha um arquivo CSV para converter em HTML ou PDF.</h4><br>
                 <input type="file" class="form-control-file" name="file" required="true"> <br> <br>
-                <input type="radio" name="radio" value="html"> HTML <br>
-                <input type="radio" name="radio" value="pdf" > PDF  <br> <br>
-
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio" id="exampleRadios1" value="html" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      HTML
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio" id="exampleRadios2" value="pdf">
+                    <label class="form-check-label" for="exampleRadios2">
+                      PDF
+                    </label>
+                  </div>
                 <button type="submit" class="btn btn-light">Converter</button>
           </form>
+          <hr>
     </div>
 </body>
 </html>
