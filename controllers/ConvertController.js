@@ -6,8 +6,6 @@ const writeFile = require('../classes/writeFile');
 const PdfWriter = require('../classes/PdfWrite');
 
 
-
-
 async function main () {
 
     const L1 = new Reader();
