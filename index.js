@@ -42,9 +42,10 @@ app.post('/upload', upload.single("file"), (req, resp) => {
     setTimeout(() => {
         fs.unlink('./file_upload.html', (err) => err ? console.log(err) : true);
         fs.unlink('./file_upload.pdf', (err) => err ? console.log(err) : true);
+        fs.unlink('./uploads/file_upload.csv', (err) => err ? console.log(err) : true);
 
         console.log('Deletou');
-    }, 300000);
+    }, 8000);
    
 });
 
