@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/clebertonf/Projeto-conversor-exel-para-html-pdf#readme",
   "dependencies": {
-    "ejs": "^3.1.6"
+    "ejs": "^3.1.6",
+    "html-pdf": "^3.0.1"
   }
 }

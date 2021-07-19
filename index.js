@@ -14,7 +14,7 @@ async function main () {
 
     const html = await HTMLparser.Parser(Table);
 
-    writeFile.Write(`${Date.now()}.html`, html)
+    await writeFile.Write(`${Date.now()}.html`, html)
 }
 
 main();
