@@ -3,17 +3,17 @@ const { ProcessConvert } = require('../controllers/ProcessController');
 const multer = require('multer');
 
 const storage = multer.diskStorage({
-    destination: (req, file, callback) => {
+    destination: (_req, _file, callback) => {
         callback(null, 'uploads/')
     },
-    filename: (req, file, callbac) => {
+    filename: (_req, _file, callbac) => {
         callbac(null, "file_upload.csv");
     }
 })
 
 const upload = multer({storage});
 
-router.get('/', (req, resp) => {
+router.get('/', (_req, resp) => {
     resp.render('index');
 });
 
