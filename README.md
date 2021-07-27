@@ -55,3 +55,8 @@ Verifique o package.json, la se encontram scripts para execução do projeto.
 - `"start": "node index.js", (npm start) inicia o projeto com node.`
 
 ## Funcionalidade principal
+
+![funcionalidade-principal](./public/imgs/02-funcionalidade-principal.png)
+
+Basta fazer o upload de uma planilha excel, escolher qual o formato de saida, e a conversão será feita
+e o download será feito em seguida.
