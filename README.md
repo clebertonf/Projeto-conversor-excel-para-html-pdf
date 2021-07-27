@@ -44,6 +44,6 @@ Espero que gostem #VQV :rocket:
 
 ## Começando
 
--- Clone o repositório git clone git@github.com:clebertonf/Projeto-conversor-exel-para-html-pdf.git
--- Na raiz do projeto rode o comando npm install para instalar as depedências do projeto.
+- Clone o repositório git clone git@github.com:clebertonf/Projeto-conversor-exel-para-html-pdf.git
+- Na raiz do projeto rode o comando npm install para instalar as depedências do projeto.
 
