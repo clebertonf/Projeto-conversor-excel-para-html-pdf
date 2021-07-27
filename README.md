@@ -40,10 +40,18 @@ Espero que gostem #VQV :rocket:
 ## Avisos
 
 - Este projeto necessita apenas do NodeJs instalado em seu computador para rodar localmente.
-- As demais dependecias serão instaladas com comando npm i
+- As demais dependêcias serão instaladas com comando npm install
 
 ## Começando
 
 - Clone o repositório git clone git@github.com:clebertonf/Projeto-conversor-exel-para-html-pdf.git
 - Na raiz do projeto rode o comando npm install para instalar as depedências do projeto.
 
+## Executando
+
+Verifique o package.json, la se encontram scripts para execução do projeto.
+
+- `"debug": "nodemon index.js", (npm run debug) inicia o projeto com nodemon.`
+- `"start": "node index.js", (npm start) inicia o projeto com node.`
+
+## Funcionalidade principal
