@@ -17,3 +17,20 @@ Espero que gostem #VQV :rocket:
 4. PUBLIC: Contem as imagens utilizadas no projeto.
 5. ROUTERS:  Possui as rotas da aplicação, sistema de rotas próprio do framework Express.
 6. UPLOADS: Destinada ao upload dos arquivos feita na aplicação.
+
+## tecnologias utilizadas
+
+- Linguagens:
+  - NodeJs
+- Organização e Padronização de codigo:
+  - Eslint / config-airbnb-base
+- Facilitador de desenvolvimento:
+  - nodemon
+- Framework's:
+  - Express
+- View engine:
+  - EJS
+- Upload de Arquivos:
+  - Multer
+- Conversor PDF:
+  - html-pdf
