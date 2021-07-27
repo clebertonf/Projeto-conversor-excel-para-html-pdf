@@ -36,3 +36,14 @@ Espero que gostem #VQV :rocket:
   - nodemon
 - Organização e Padronização de codigo:
   - Eslint / config-airbnb-base
+
+## Avisos
+
+- Este projeto necessita apenas do NodeJs instalado em seu computador para rodar localmente.
+- As demais dependecias serão instaladas com comando npm i
+
+## Começando
+
+-- Clone o repositório git clone git@github.com:clebertonf/Projeto-conversor-exel-para-html-pdf.git
+-- Na raiz do projeto rode o comando npm install para instalar as depedências do projeto.
+
