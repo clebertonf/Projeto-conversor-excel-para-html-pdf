@@ -56,6 +56,9 @@ Verifique o package.json, la se encontram scripts para execução do projeto.
 
 ## Funcionalidade principal
 
+Apos 3 minutos todos os uploads de arquivos são apagados automaticamente. A interface principal esta ilustrada
+abaixo.
+
 ![funcionalidade-principal](./public/imgs/02-funcionalidade-principal.png)
 
 Basta fazer o upload de uma planilha excel, escolher qual o formato de saida, e a conversão será feita
