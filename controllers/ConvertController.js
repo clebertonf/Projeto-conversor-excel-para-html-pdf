@@ -5,20 +5,18 @@ const HTMLparser = require('../classes/HTMLpaser');
 const writeFile = require('../classes/writeFile');
 const PdfWriter = require('../classes/PdfWrite');
 
+async function main() {
+  const L1 = new Reader();
+  const data = await L1.read('./uploads/file_upload.csv');
+  const processData = processFile.Process(data);
 
-async function main () {
+  const Table = new CreateTable(processData);
 
-    const L1 = new Reader();
-    const data = await L1.read('./uploads/file_upload.csv');
-    const  processData = processFile.Process(data);
+  const html = await HTMLparser.Parser(Table);
 
-    const Table = new CreateTable(processData);
+  await writeFile.Write('file_upload.html', html);
 
-    const html = await HTMLparser.Parser(Table);
-
-    await writeFile.Write(`file_upload.html`, html);
-    
-    PdfWriter.Writer(`file_upload.pdf`, html);
+  PdfWriter.Writer('file_upload.pdf', html);
 }
 
-module.exports = {main};
+module.exports = { main };

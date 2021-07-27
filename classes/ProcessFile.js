@@ -1,16 +1,15 @@
 class processFile {
-    
-    static Process(data) {
-        const dataProcess = data.split("\n")
-        const rows = [];
+  static Process(data) {
+    const dataProcess = data.split('\n');
+    const rows = [];
 
-        dataProcess.forEach(element => {
-            let dataLine = element.split(",");
-            rows.push(dataLine);
-        });
+    dataProcess.forEach((element) => {
+      const dataLine = element.split(',');
+      rows.push(dataLine);
+    });
 
-       return rows;
-    }
+    return rows;
+  }
 }
 
-module.exports = processFile
+module.exports = processFile;
