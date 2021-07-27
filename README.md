@@ -61,4 +61,4 @@ Verifique o package.json, la se encontram scripts para execução do projeto.
 Basta fazer o upload de uma planilha excel, escolher qual o formato de saida, e a conversão será feita
 e o download será feito em seguida.
 
-![conversor-de-arquivos](./public/imgs/03-conversor-gif.gif)
+![conversor-de-arquivos](./public/imgs/03-conversor-gif.gif =100x100)
