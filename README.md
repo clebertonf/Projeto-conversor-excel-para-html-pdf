@@ -7,4 +7,4 @@ Este projeto consiste em um sistema monolito na arquitetura MVC, pois toda sua e
 Espero que gostem #VQV :rocket:
 
 ## Estrutura
-[estrutura do projeto](./public/imgs/01-estrutura.png)
+![estrutura do projeto](./public/imgs/01-estrutura.png)
