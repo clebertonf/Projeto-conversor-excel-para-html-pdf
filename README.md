@@ -22,10 +22,6 @@ Espero que gostem #VQV :rocket:
 
 - Linguagens:
   - NodeJs
-- Organização e Padronização de codigo:
-  - Eslint / config-airbnb-base
-- Facilitador de desenvolvimento:
-  - nodemon
 - Framework's:
   - Express
 - View engine:
@@ -34,4 +30,7 @@ Espero que gostem #VQV :rocket:
   - Multer
 - Conversor PDF:
   - html-pdf
-
+- Facilitador de desenvolvimento:
+  - nodemon
+- Organização e Padronização de codigo:
+  - Eslint / config-airbnb-base
