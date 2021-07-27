@@ -26,6 +26,8 @@ Espero que gostem #VQV :rocket:
   - Express
 - View engine:
   - EJS
+- Estilos:
+  - Bootstrap
 - Upload de Arquivos:
   - Multer
 - Conversor PDF:
