@@ -1,4 +1,4 @@
-## **Conversor de planilhas excel para HTML ou PDF com Node.JS :rocket:** 
+## **Conversor de planilhas excel para HTML ou PDF com Node.JS :rocket: 🚀** 
 
 Olá seja bem vindo ao repositório do projeto conversor de planilhas! :page_with_curl:
 
